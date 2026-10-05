@@ -46,3 +46,17 @@ Construir el servidor MCP más pequeño posible y probarlo con MCP Inspector. En
 
 - ¿Por qué Inspector es útil antes de probar con un agente?
 - ¿Qué información debe tener una tool para que un modelo pueda usarla sin adivinar?
+
+
+## Entrega 
+Server.py ejecutable con tool completa
+
+Inspector funcionando bien
+
+Las anotaciones de tipos (a y b que son int) y el docstring se convierten automaticamente en el JSON Schema y la descripción que el host le muestra al modelo, así que forman parte del contrato visible: el modelo sabe qué argumentos enviar y de qué tipo sin tener que adivinar
+
+### ¿Por qué Inspector es útil antes de probar con un agente?
+el modelo es no determinista: si algo falla con un agente, no sabés si el problema es el servidor, el prompt o el modelo. Inspector prueba solo la capa determinista, donde la misma entrada da siempre la misma salida
+
+### ¿Qué información debe tener una tool para que un modelo pueda usarla sin adivinar?
+Un nombre preciso, un docstring que diga qué hace y qué efecto tiene, y argumentos tipados con su significado. El modelo no ve tu código, solo ese contrato
