@@ -49,3 +49,6 @@ Un registro breve con el prompt usado, qué capacidad se invocó y una aclaraci�
 
 - ¿Por qué el modelo no se conecta directamente con el sitio de documentación?
 - ¿Qué diferencia hay entre que una tool esté disponible y que sea apropiado usarla?
+
+## Registro de Entrega
+Prompt usado = Cómo se define un UniqueConstraint en un modelo de Django según su documentación actual? Usá context7."
